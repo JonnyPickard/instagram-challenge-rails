@@ -1,5 +1,5 @@
-<% if Image.all.any? %>
-  <% Image.all.each do |image| %>
+<% if @images.any? %>
+  <% @images.each do |image| %>
     <h2><%= image.title %></h2>
   <% end %>
 <% else %>
