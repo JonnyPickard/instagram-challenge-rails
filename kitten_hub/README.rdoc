@@ -1,0 +1,60 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+--User Stories--
+
+1.
+As a user
+So that I can create an account, to use the website
+I would like a sign up function
+
+2.
+As a user
+So that I can use the same account
+I would like a sign in function
+
+3.
+As a user
+So that I can show off my pictures
+I would like a post picture option
+
+4.
+As a user
+So that I can view pictures
+I would like a view pictures option
+
+5.
+As a user
+So that I can express my feelings about pictures
+I would like the option to comment on pictures
+
+6.
+As a user
+So that I can endorse pictures I enjoy,
+I would like an endorse picture option.
