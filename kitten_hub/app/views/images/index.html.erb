@@ -1,2 +1,9 @@
-No images yet!
+<% if Image.all.any? %>
+  <% Image.all.each do |image| %>
+    <h2><%= image.title %></h2>
+  <% end %>
+<% else %>
+  <h1>No images yet!</h1>
+<% end %>
+
 <a href="#">Upload an image</a>
