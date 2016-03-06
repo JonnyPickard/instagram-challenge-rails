@@ -5,4 +5,13 @@ class ImagesController < ApplicationController
 
   def new
   end
+
+  def create
+    Image.create(image_params)
+    redirect_to '/images'
+  end
+
+  def image_params
+    params.require(:image).permit(:title, :description)
+  end
 end

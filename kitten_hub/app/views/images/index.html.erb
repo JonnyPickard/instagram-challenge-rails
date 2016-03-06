@@ -1,9 +1,10 @@
 <% if @images.any? %>
   <% @images.each do |image| %>
     <h2><%= image.title %></h2>
+    <h3><%= image.description %></h3>
   <% end %>
 <% else %>
   <h1>No images yet!</h1>
 <% end %>
 
-<a href="#">Upload an image</a>
+<a href="/images/new">Upload an image</a>
