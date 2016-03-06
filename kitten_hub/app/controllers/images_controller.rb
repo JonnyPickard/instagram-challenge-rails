@@ -4,10 +4,11 @@ class ImagesController < ApplicationController
   end
 
   def new
+    @image = Image.new
   end
 
   def create
-    Image.create(image_params)
+    @image = Image.create(image_params)
     redirect_to '/images'
   end
 
