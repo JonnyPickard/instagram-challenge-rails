@@ -1,8 +1,8 @@
 class ImagesController < ApplicationController
-  before_filter :authenticate_user!
+  before_action :authenticate_user!
 
   def index
-    @images = Image.all
+    @images = Image.all.where(user_id: current_user.id)
   end
 
   def new
@@ -10,7 +10,9 @@ class ImagesController < ApplicationController
   end
 
   def create
-    @image = Image.create(image_params)
+    @image = Image.new(image_params)
+    @image.user_id = current_user.id
+    @image.save
     redirect_to '/images'
   end
 

@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :images, dependent: :destroy
 
   devise :database_authenticatable, :registerable,
         :recoverable, :rememberable, :trackable, :validatable, :omniauthable,
@@ -10,6 +11,7 @@ class User < ActiveRecord::Base
       user.password = Devise.friendly_token[0,20]
     end
   end
+
 
   # def self.new_with_session(params, session)
   #   super.tap do |user|
