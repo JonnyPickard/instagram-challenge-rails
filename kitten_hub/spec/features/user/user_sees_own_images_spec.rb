@@ -1,16 +1,14 @@
 require 'rails_helper'
 
-context 'viewing images' do
+feature "User sees own images" do
+  scenario "Successfully" do
+    sign_in
 
-  let!(:kitten){Image.create(title:'Kitten', description:'Gangster Kitten')}
+    create_image
 
-  scenario 'lets a user view an image' do
-    #sign in
-    #create image
+    click_link "Kitten"
 
-    visit '/images'
-    click_link 'Kitten'
-    expect(page).to have_content 'Kitten'
-    expect(current_path).to eq "/images/#{kitten.id}"
+    expect(page).to have_content "Kitten"
+    expect(current_path).to eq "/images/1"
   end
 end

@@ -16,6 +16,7 @@ gem 'jquery-rails', "~> 2.3.0"
 
 group :test do
 	gem 'capybara'
+	gem 'database_cleaner'
 end
 
 group :development, :test do
