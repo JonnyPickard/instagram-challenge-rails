@@ -12,8 +12,11 @@ class ImagesController < ApplicationController
   def create
     @image = Image.new(image_params)
     @image.user_id = current_user.id
-    @image.save
-    redirect_to '/images'
+    if @image.save
+      redirect_to images_path, notice: 'Image was successfully uploaded.'
+    else
+      redirect_to new_image_path
+    end
   end
 
   def show
@@ -39,6 +42,6 @@ class ImagesController < ApplicationController
   end
 
   def image_params
-    params.require(:image).permit(:title, :description)
+    params.require(:image).permit(:title, :description, :picture)
   end
 end

@@ -6,7 +6,7 @@ feature "User edits image" do
 
     create_image
 
-    click_link "Edit Kitten"
+    click_link "Edit Test"
     fill_in "Title", with: "Miaowster"
     click_button "Update"
 

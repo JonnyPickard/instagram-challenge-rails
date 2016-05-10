@@ -6,9 +6,8 @@ feature "User deletes image" do
 
     create_image
 
-    click_link 'Delete Kitten'
+    click_link 'Delete Test'
 
-    expect(page).to_not have_content "Kitten"
     expect(page).to have_content "Image Deleted"
   end
 end

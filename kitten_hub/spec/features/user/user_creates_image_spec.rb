@@ -6,7 +6,7 @@ feature "User uploads an image" do
 
     create_image
 
-    expect(page).to have_content 'Kitten'
-    expect(current_path).to eq '/images'
+    expect(page).to have_css('h2', text: 'Test')
+    expect(page).to have_xpath("//img[contains(@src, 'test.jpg')]")
   end
 end

@@ -6,9 +6,9 @@ feature "User sees own images" do
 
     create_image
 
-    click_link "Kitten"
+    click_link "Test"
 
-    expect(page).to have_content "Kitten"
+    expect(page).to have_content "Test"
     expect(current_path).to eq "/images/4"
   end
 end
@@ -23,6 +23,6 @@ feature "User doesn't see others images" do
 
     sign_in
 
-    expect(page).not_to have_content "Kitten"
+    expect(page).not_to have_content "Test"
   end
 end

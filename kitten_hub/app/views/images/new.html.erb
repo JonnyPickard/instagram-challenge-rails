@@ -1,7 +1,17 @@
 <%= form_for @image do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :description %>
-  <%= f.text_field :description %>
-  <%= f.submit :Upload %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %>
+    <%= f.file_field :picture %>
+  </div>
+  <div class="actions">
+    <%= f.submit :Upload %>
+  </div>
 <% end %>
