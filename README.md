@@ -1,3 +1,5 @@
+Note: I have moved this project into its own repository called [miaowster](www.github.com/jonnypickard/miaowster)
+
 Instagram Challenge
 ===================
 
