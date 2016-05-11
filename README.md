@@ -1,4 +1,4 @@
-Note: I have moved this project into its own repository called [miaowster](www.github.com/jonnypickard/miaowster)
+Note: I have moved this project into its own repository called [miaowster](https://github.com/JonnyPickard/miaowster)
 
 Instagram Challenge
 ===================
